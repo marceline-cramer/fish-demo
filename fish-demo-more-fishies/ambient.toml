@@ -1,0 +1,7 @@
+[ember]
+id = "fish_demo_more_fishies"
+name = "fish-demo-more-fishies"
+version = "0.0.1"
+
+[dependencies]
+fish_demo = { path = "../" }

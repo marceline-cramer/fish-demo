@@ -1,0 +1,22 @@
+[ember]
+id = "fish_demo"
+name = "fish-demo"
+version = "0.0.1"
+
+[components.fish]
+type = "Empty"
+
+[components.position]
+type = "Vec2"
+
+[components.pellet]
+type = "Empty"
+
+[components.speed]
+type = "F32"
+
+[components.size]
+type = "Vec2"
+
+[messages.SpawnPellet]
+fields = { at = "Vec2" }

@@ -1,0 +1,21 @@
+[package]
+name = "fish-demo-more-fishies"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ambient_api.workspace = true
+
+[[bin]]
+name = "client_fish_demo_more_fishies"
+path = "src/client.rs"
+required-features = ["client"]
+
+[[bin]]
+name = "server_fish_demo_more_fishies"
+path = "src/server.rs"
+required-features = ["server"]
+
+[features]
+client = ["ambient_api/client"]
+server = ["ambient_api/server"]
